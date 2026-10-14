@@ -6,6 +6,68 @@
   <title>Портфоліо – Кулінарний блог кондитера</title>
 </head>
 <body>
+ <header>
+  <h1>Альона Нікітіна - мій кулінарний блог</h1>
+  <nav>
+    <a href="#about">Про мене</a>
+    <a href="#projects">Проєкти</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+</header>
+<main>
+  <section id="about">
+    <h2>Про мене</h2>
+    <p>
+      Коротка розповідь про себе: хто ви, чим займаєтесь,
+      які технології вивчаєте. Напишіть 3–5 речень
+      у стилі вашої теми (кондитер, фотограф тощо).
+    </p>
+    <img src="photo.jpg" alt="Ваше ім’я за роботою над проєктом" width="300">
+  </section>
+ <section id="projects">
+  <h2>Проєкти</h2>
  
+  <article>
+    <h3>Назва проєкту 1</h3>
+    <p>Короткий опис: що це за проєкт і які технології використано.</p>
+  </article>
+ 
+  <article>
+    <h3>Назва проєкту 2</h3>
+    <p>Короткий опис другого проєкту.</p>
+  </article>
+ 
+  <!-- За бажанням додайте третій article -->
+</section>
+<section id="contact">
+  <h2>Контакти</h2>
+  <form action="#" method="post">
+    <label for="name">Ім’я *</label><br>
+    <input type="text" id="name" name="name"
+           required minlength="2" maxlength="50"><br><br>
+ 
+    <label for="email">Електронна пошта *</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+ 
+    <label for="topic">Тема звернення</label><br>
+    <select id="topic" name="topic" required>
+      <option value="" disabled selected>Оберіть тему</option>
+      <option value="general">Загальне питання</option>
+      <option value="work">Пропозиція співпраці</option>
+    </select><br><br>
+ 
+    <label for="message">Повідомлення *</label><br>
+    <textarea id="message" name="message"
+              required maxlength="500" rows="5"></textarea><br><br>
+ 
+    <button type="submit">Надіслати</button>
+  </form>
+</section>
+
+</main>
+<footer>
+  <p>&copy; 2026. Усі права захищено.</p>
+</footer>
+
 </body>
 </html>
